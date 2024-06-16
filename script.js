@@ -170,7 +170,10 @@ Example: basicCalculator(10, 5, 'subtract') should return 5.
 Complete the exercise in the space below:
 */
 
-function basicCalculator(num1, num2, operator)
+function basicCalculator(num1, num2, operator) {
+    const operator = {
+    }
+}
 
 console.log('Exercise 9 Result:', basicCalculator(10, 5, "subtract"));
 
