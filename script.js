@@ -33,9 +33,9 @@ Complete the exercise in the space below:
 
 function isAdult(age) {
     if (age >=18) {
-        console.log(`Adult`)
+        return(`Adult`)
     } else {
-        console.log(`Minor`)
+        return(`Minor`)
     }
 }
 
@@ -57,9 +57,9 @@ Complete the exercise in the space below:
 
 function isCharAVowel(char) {
     if (char === `a` || char === `e` || char === `i` || char === `o` || char === `u`) {
-        console.log(`True`)
+        return(`True`)
     } else {
-        console.log(`False`)
+        return(`False`)
     }
 }
 
@@ -78,7 +78,7 @@ Complete the exercise in the space below:
 */
 
 function generateEmail(name, domain) {
-    console.log(`${name}@${domain}`)
+    return(`${name}@${domain}`)
 }
 
 console.log('Exercise 4 Result:', generateEmail("johnsmith", "example.com"));
@@ -96,7 +96,7 @@ Complete the exercise in the space below:
 */
 
 function greetUser(name, time) {
-    console.log(`Good ${time}, ${name}!`)
+    return(`Good ${time}, ${name}!`)
 }
 
 console.log('Exercise 5 Result:', greetUser("Sam", "morning"));
@@ -113,7 +113,7 @@ Complete the exercise in the space below:
 */
 
 function maxOfThree(num1, num2, num3) {
-    console.log(Math.max(num1, num2, num3))
+    return(Math.max(num1, num2, num3))
 }
 
 console.log('Exercise 6 Result:', maxOfThree(5, 10, 8));
@@ -131,7 +131,7 @@ Complete the exercise in the space below:
 */
 
 function calculateTip(bill, tip) {
-    console.log(bill * (tip / 100))
+    return(bill * (tip / 100))
 }
 
 console.log('Exercise 7 Result:', calculateTip(50, 20));
@@ -150,7 +150,13 @@ Example: convertTemperature(32, 'F') should return 0 (Celsius).
 Complete the exercise in the space below:
 */
 
-function convertTemperature(temp, string) {}
+function convertTemperature(temperature, scale) {
+    if (scale === `C`) {
+        return((temperature * 9/5) + 32)
+    } else if (scale === `F`) {
+        return((temperature - 32) * 5/9) 
+    }
+}
 
 console.log('Exercise 8 Result:', convertTemperature(32, "C"));
 
@@ -170,10 +176,9 @@ Example: basicCalculator(10, 5, 'subtract') should return 5.
 Complete the exercise in the space below:
 */
 
-function basicCalculator(num1, num2, operator) {
-    const operator = {
-    }
-}
+
+    
+
 
 console.log('Exercise 9 Result:', basicCalculator(10, 5, "subtract"));
 
